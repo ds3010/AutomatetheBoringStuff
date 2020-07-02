@@ -5,9 +5,9 @@ theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
 def printBoard(board):
     print(' ')
     print (' ' + board['top-L'] + ' | ' + board['top-M'] + ' | ' + board['top-R'] + ' ')
-    print ('-----------')
+    print ('---+---+---')
     print (' ' + board['mid-L'] + ' | ' + board['mid-M'] + ' | ' + board['mid-R'] + ' ')
-    print ('-----------')
+    print ('---+---+---')
     print (' ' + board['low-L'] + ' | ' + board['low-M'] + ' | ' + board['low-R'] + ' ')
     print(' ')
 
@@ -16,7 +16,7 @@ def modifyBoard(i,player):
     #The following block continuously asks the player for a move until a valid one is entered and then modifies the board accordingly
     while (i not in theBoard.keys()) or (theBoard[i] != ' '):
         if i not in theBoard.keys():
-            print('There is no spot named ' + i + ', please try again.')
+            print('There is no spot named "' + i + '", please try again.')
             print(player + '-Player: Type a spot in the board:')
             print('Spots available: ', end='')
             for x in theBoard.keys():
