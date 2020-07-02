@@ -5,9 +5,9 @@ theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
 def printBoard(board):
     print(' ')
     print (' ' + board['top-L'] + ' | ' + board['top-M'] + ' | ' + board['top-R'] + ' ')
-    print ('---+---+---')
+    print ('-----------')
     print (' ' + board['mid-L'] + ' | ' + board['mid-M'] + ' | ' + board['mid-R'] + ' ')
-    print ('---+---+---')
+    print ('-----------')
     print (' ' + board['low-L'] + ' | ' + board['low-M'] + ' | ' + board['low-R'] + ' ')
     print(' ')
 
