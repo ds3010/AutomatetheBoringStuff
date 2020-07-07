@@ -21,7 +21,7 @@ if account in PASSWORDS:
     pyperclip.copy(PASSWORDS[account])
     print('Password for ' + account + ' copied to clipboard.')
 else:
-    print('There is no account named ' + account + '. Do you want to add this account to the password dictionary?(Y/N): ')
+    print('There is no account named ' + account + '. Do you want to add this account to the password dictionary? (Y/N): ')
     addPwd = raw_input()
     addPwd = addPwd.lower()
     if addPwd == 'y':
