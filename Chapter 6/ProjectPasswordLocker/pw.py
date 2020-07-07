@@ -12,7 +12,7 @@ the arguments with the command
 import sys, pyperclip
 
 if len(sys.argv) < 2:
-    print('Usage: python pw.py [account] - copy account password')
+    print('Usage: Remember to type your username as an argument')
     sys.exit()
 
 account = sys.argv[1]
